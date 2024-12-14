@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar, footer {
+    background-color: #007bff; /* Blue color */
+}
+
+.navbar-brand, .nav-link, footer p {
+    color: white !important;
+}
