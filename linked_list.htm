@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List - Data Structures</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+        <!-- Home Button -->
+        <a class="navbar-brand text-white" href="index.htm">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links on the right -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="array.htm">Array</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="linkedlist.htm">Linked List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="stack.htm">Stacks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="queue.htm">Queue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="trees.htm">Trees</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content Area -->
+<div class="container mt-5 text-center">
+    <h1>Linked List</h1>
+    <p>A <strong>linked list</strong> is a linear data structure where elements are stored in nodes connected by pointers. Unlike arrays, linked lists allow dynamic memory allocation and efficient insertion and deletion operations.</p>
+    <img src="./assets/images/linkedlist.png" alt="Linked List Diagram" class="img-fluid mt-4">
+</div>
+
+<!-- Why Linked Lists are Important -->
+<div class="container mt-5 text-center">
+    <h2>Why Use Linked Lists?</h2>
+    <p>Linked lists are particularly useful for:</p>
+    <ul class="list-unstyled">
+        <li>1. Dynamic memory allocation.</li>
+        <li>2. Efficient insertion and deletion operations.</li>
+        <li>3. Implementing stacks, queues, and other abstract data types.</li>
+        <li>4. Managing data where memory allocation is unpredictable.</li>
+    </ul>
+</div>
+
+<!-- Code Examples -->
+<div class="container mt-5">
+    <h2 class="text-center">Code Examples</h2>
+    <ul class="list-unstyled">
+        <li><code>1. // How to create a linked list node</code>
+            <pre><code>class Node {
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
+}</code></pre>
+        </li>
+        <li><code>2. // How to insert at the beginning</code>
+            <pre><code>let head = null;
+const newNode = new Node(10);
+newNode.next = head;
+head = newNode;</code></pre>
+        </li>
+        <li><code>3. // How to traverse a linked list</code>
+            <pre><code>let current = head;
+while (current !== null) {
+    console.log(current.data);
+    current = current.next;
+}</code></pre>
+        </li>
+        <li><code>4. // How to delete a node</code>
+            <pre><code>function deleteNode(key) {
+    let current = head;
+    let prev = null;
+
+    while (current !== null && current.data !== key) {
+        prev = current;
+        current = current.next;
+    }
+
+    if (current === null) return; // Key not found
+
+    prev.next = current.next;
+}</code></pre>
+        </li>
+    </ul>
+</div>
+
+<!-- Code Editor and Output Section -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Code Editor -->
+        <div class="col-md-6">
+            <h2>Write Your Code</h2>
+            <textarea id="code-editor" class="form-control" rows="10" placeholder="Write your JavaScript code here..."></textarea>
+            <button id="run-code" class="btn btn-primary mt-3">Run Code</button>
+        </div>
+        <!-- Output Section -->
+        <div class="col-md-6">
+            <h2>Output</h2>
+            <div id="output" class="border p-3 bg-light" style="min-height: 200px;">Your output will appear here...</div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <p class="text-center text-white">&copy; 2024 Adnan Bhuiyan. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

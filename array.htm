@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Data Structures</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+        <!-- Home Button -->
+        <a class="navbar-brand text-white" href="index.htm">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links on the right -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="array.html">Array</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="linked_list.htm">Linked List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="stack.htm">Stacks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="queue.htm">Queue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="trees.htm">Trees</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content Area -->
+<div class="container mt-5 text-center">
+    <h1>Arrays</h1>
+    <p>An <strong>array</strong> is a data structure that contains a group of elements. These elements are stored at contiguous memory locations and can be accessed using indices. Arrays are widely used because of their efficiency in accessing and manipulating data.</p>
+    <img src="./assets/images/array.png" alt="Array Diagram" class="img-fluid mt-4">
+</div>
+
+<!-- Why Arrays are Important -->
+<div class="container mt-5 text-center">
+    <h2>Why Use Arrays?</h2>
+    <p>Arrays are crucial in programming for the following reasons:</p>
+    <ul class="list-unstyled">
+        <li>1. Easy access to elements using indices.</li>
+        <li>2. Efficient use of memory for fixed-size data.</li>
+        <li>3. Supports a wide range of algorithms, including searching and sorting.</li>
+        <li>4. Foundational structure for more complex data structures like matrices and tables.</li>
+    </ul>
+</div>
+
+<!-- Code Examples -->
+<div class="container mt-5">
+    <h2 class="text-center">Code Examples And Give it a Try below</h2>
+    <ul class="list-unstyled">
+        <li><code>1. // How to create an array</code>
+            <pre><code>const array = [1, 2, 3, 4, 5];</code></pre>
+        </li>
+        <li><code>2. // How to add an element to an array</code>
+            <pre><code>array.push(6); // Adds 6 to the end</code></pre>
+        </li>
+        <li><code>3. // How to remove an element from an array</code>
+            <pre><code>array.pop(); // Removes the last element</code></pre>
+        </li>
+        <li><code>4. // How to access an element in an array</code>
+            <pre><code>const firstElement = array[0]; // Accesses the first element</code></pre>
+        </li>
+        <li><code>5. // How to find the length of an array</code>
+            <pre><code>const length = array.length; // Returns the number of elements</code></pre>
+        </li>
+        <li><code>6. // How to iterate over an array</code>
+            <pre><code>array.forEach(element => {
+    console.log(element);
+});</code></pre>
+        </li>
+        <li><code>7. // How to remove an element by index</code>
+            <pre><code>array.splice(2, 1); // Removes 1 element at index 2</code></pre>
+        </li>
+        <li><code>8. // How to check if an element exists in an array</code>
+            <pre><code>const exists = array.includes(3); // Returns true if 3 exists</code></pre>
+        </li>
+    </ul>
+</div>
+
+
+
+<!-- Code Editor and Output Section -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Code Editor -->
+        <div class="col-md-6">
+            <h2>Write Your Code</h2>
+            <textarea id="code-editor" class="form-control" rows="10" placeholder="Write your JavaScript code here..."></textarea>
+            <button id="run-code" class="btn btn-primary mt-3">Run Code</button>
+        </div>
+        <!-- Output Section -->
+        <div class="col-md-6">
+            <h2>Output</h2>
+            <div id="output" class="border p-3 bg-light" style="min-height: 200px;">Your output will appear here...</div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <p class="text-center text-white">&copy; 2024 Adnan Bhuiyan. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
